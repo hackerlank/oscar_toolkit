@@ -4,5 +4,5 @@ create table tbl_role
 	money int(11) unsigned not null,
 	level int(11) unsigned not null,
 	signature varchar(128) not null,
-	primark key (id),
+	primary key (id)
 )engine = myisam;
