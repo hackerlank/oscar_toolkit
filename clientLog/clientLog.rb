@@ -141,12 +141,12 @@ class LoginEntry < Entry
 
 end
 
-
 def newEntry(addTime, type, argument)
 	case type
 	when "GUIDE" then return GuideEntry.new(addTime, type, argument)
 	when "QUEST" then return QuestEntry.new(addTime, type, argument)
 	when "LOGIN" then return LoginEntry.new(addTime, type, argument)
+        when "ERROR" then return Entry.new(addTime, type, argument)
 	else	puts("invalid type: "..type)
 	end
 end
@@ -155,11 +155,15 @@ end
 
 
 def main()
-	input = File.new("session.log")
+	input = File.new("/tmp/session.log")
 	clientLogRegex = /(.+)\,(.+)\:(.+)\?(.+)\./
 	clientLog = {}
 	input.each{ |line|
+	        if line.start_with?("session")
+                  line.slice!(0..25)
+                end
 		m = clientLogRegex.match(line)
+		next if m[3] == "ERROR"
 		clientLog.store(m[3], []) unless clientLog.key?(m[3])
 		clientLog.fetch(m[3]) << newEntry(m[1], m[3], m[4])
 	}
