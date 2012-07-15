@@ -1,0 +1,4 @@
+island.2012-07-14-16.log:2012-07-14 16:12:14,055 INFO :(main) com.ztgame.tiger.server.island.service.transcript.TranscriptExplorationSingle - Server log:TranscriptFight?transcriptTemplateId=4#monsterSpreadId=401#isWin=1#roleId=369435906932737
+island.2012-07-14-16.log:2012-07-14 16:47:09,333 INFO :(main) com.ztgame.tiger.server.island.service.transcript.TranscriptExplorationSingle - Server log:TranscriptFight?transcriptTemplateId=4#monsterSpreadId=402#isWin=1#roleId=369435906932737
+island.2012-07-14-17.log:2012-07-14 17:14:10,137 INFO :(main) com.ztgame.tiger.server.island.service.transcript.TranscriptExplorationSingle - Server log:TranscriptFight?transcriptTemplateId=2#monsterSpreadId=201#isWin=1#roleId=369435906932741
+island.2012-07-14-17.log:2012-07-14 17:21:24,984 INFO :(main) com.ztgame.tiger.server.island.service.transcript.TranscriptExplorationSingle - Server log:TranscriptFight?transcriptTemplateId=4#monsterSpreadId=403#isWin=1#roleId=369435906932737
